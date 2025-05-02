@@ -15,7 +15,8 @@ export const router = createBrowserRouter([
             {
                 index: "true",
                 element: <Home></Home>,
-                loader: ()=>fetch("phones.json")
+                hydreateFallbalckElement: <h2> loading,  please wait......</h2>,
+                loader: () => fetch("phones.json"),
 
             },
             {
